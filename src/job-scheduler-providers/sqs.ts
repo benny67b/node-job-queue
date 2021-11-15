@@ -16,7 +16,7 @@ export class SQSJobScheduler<T> extends EventEmitter implements JobScheduler<T> 
   private sqsClient: AWS.SQS;
   private topic: string;
   private queueUrl: string;
-  private dbJobCollectorInterval: number = 30000;//600_000; // 10 mins
+  private dbJobCollectorInterval: number = 600_000; // 10 mins
 
   constructor(topic: string, sqsOptions: SQSInitOptions) {
     super();
