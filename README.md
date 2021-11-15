@@ -9,8 +9,18 @@ Hi!
 Both implementations inherits from EventEmitter and implements a common interface.
 
 Basic usage:
-```javascript
+```typescript
+interface JobData {
+  url: string;
+}
+
+// in memory based
 const scheduler = new InMemoryJobScheduler<JobData>(topic);
+// or sqs based
+const scheduler = new SQSJobScheduler<JobData>(topic, options);
+```
+
+```javascript
 await scheduler.init();
 /*
   data is the specific data that was added to the job
