@@ -1,0 +1,33 @@
+{
+  "name": "job-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "NODE_OPTIONS=--enable-source-maps NODE_PATH=./dist nodemon dist/main.js",
+    "debug": "concurrently --handle-input -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"tsc -w --preserveWatchOutput\" \"npm run serve\" ",
+    "start": "tsc && npm run debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@typegoose/typegoose": "^9.2.0",
+    "@types/mongodb": "^4.0.7",
+    "aws-sdk": "^2.1026.0",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12",
+    "sqs-consumer": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.7",
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14",
+    "typescript": "^4.4.4"
+  }
+}

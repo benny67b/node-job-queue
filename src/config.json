@@ -1,0 +1,17 @@
+{
+  "env": "dev",
+  "server": {
+    "port": 55551
+  },
+  "scheduler": {
+    "type": "inMemory",
+    "options": {
+      "region": "eu-west-1",
+      "endpoint": "http://localhost:4566"
+    }
+  },
+  "mongodb": {
+    "uri": "mongodb+srv://user:gTWqpbjJfROeSBmS@cluster0.fwmct.mongodb.net",
+    "dbName": "jobs"
+  }
+}
