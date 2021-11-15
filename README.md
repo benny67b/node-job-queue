@@ -8,13 +8,13 @@ Hi!
 3. `npm start`
 
 ### This implementation consist 2 options for job schedulers
-# 1. In memory
-# 2. SQS based (closer to real production projects)
+#### 1. In memory
+#### 2. SQS based (closer to real production projects)
 
 Both implementations inherits from EventEmitter and implements a common interface.
 
 ### REST api (default port is 55551, can be changed in `scr/config/js`)
-# 1. Adding a job:
+#### 1. Adding a job:
 ```bash
 curl --request POST \
   --url http://localhost:55551/timers \
@@ -28,7 +28,7 @@ response:
 { "id": "61925ffcf5fb7e8636a68654" }
 ```
 
-# 2. Getting seconds left until execution:
+#### 2. Getting seconds left until execution:
 ```bash
 curl http://localhost:55551/timers/61925ffcf5fb7e8636a68654
 ```
@@ -66,5 +66,5 @@ To switch between SQS based scheduler and in memory scheduler just change `src/c
 }
 ```
 
-# UML diagram
+## UML diagram
 ![image](https://user-images.githubusercontent.com/31515087/141787357-3fbd1b34-2afd-438d-a4c7-69b54eaccabf.png)
