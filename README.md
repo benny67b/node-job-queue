@@ -12,7 +12,7 @@ Hi!
 
 Both implementations inherits from EventEmitter and implements a common interface.
 
-Basic usage:
+Basic usage (as shown in `src/scheduler.ts`:
 ```typescript
 interface JobData {
   url: string;
