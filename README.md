@@ -13,6 +13,21 @@ Hi!
 
 Both implementations inherits from EventEmitter and implements a common interface.
 
+### REST api (default port is 55551, can be changed in `scr/config/js`)
+1. Adding a job:
+```bash
+curl --request POST \
+  --url http://localhost:55551/timers \
+  --header 'Accept: application/json' \
+  --header 'Content-Type: application/json' \
+  --data '{
+	"hours": 0, 
+	"minutes": 0, 
+	"seconds": 3, 
+	"url": "https://someserver.com"
+}'
+```
+
 Basic usage (as shown in `src/scheduler.ts`:
 ```typescript
 interface JobData {
