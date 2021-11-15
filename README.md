@@ -13,6 +13,11 @@ Hi!
 
 Both implementations inherits from EventEmitter and implements a common interface.
 
+## Custom features
+1. Seperation to "topics".
+2. Retry mechanism: Abbility to **retry** if consumer handler failed. This can be achieved by passing `maxRetries` upon addition of a job.
+
+
 ### REST api (default port is 55551, can be changed in `scr/config.json`)
 #### 1. Adding a job:
 ```bash
