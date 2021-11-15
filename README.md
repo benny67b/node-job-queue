@@ -2,7 +2,7 @@
 
 Hi!
 
-# Starting the project:
+## Starting the project:
 1. `docker-compose up -d` to start `localstack`
 2. `npm start`
 
