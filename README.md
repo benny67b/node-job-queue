@@ -13,7 +13,7 @@ Hi!
 
 Both implementations inherits from EventEmitter and implements a common interface.
 
-### REST api (default port is 55551, can be changed in `scr/config/js`)
+### REST api (default port is 55551, can be changed in `scr/config.json`)
 #### 1. Adding a job:
 ```bash
 curl --request POST \
