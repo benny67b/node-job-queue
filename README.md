@@ -4,7 +4,8 @@ Hi!
 
 ## Starting the project:
 1. `docker-compose up -d` to start `localstack`
-2. `npm start`
+2. `npm install`
+3. `npm start`
 
 ### This implementation consist 2 options for job schedulers
 1. In memory
