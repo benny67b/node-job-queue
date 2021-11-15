@@ -29,5 +29,5 @@ await scheduler.init();
 scheduler.receive(({ data, id }) => axios.post(`${data.url}/${id}`));
 ```
 
-
+# UML diagram
 ![image](https://user-images.githubusercontent.com/31515087/141787357-3fbd1b34-2afd-438d-a4c7-69b54eaccabf.png)
