@@ -20,12 +20,22 @@ curl --request POST \
   --url http://localhost:55551/timers \
   --header 'Accept: application/json' \
   --header 'Content-Type: application/json' \
-  --data '{
-	"hours": 0, 
-	"minutes": 0, 
-	"seconds": 3, 
-	"url": "https://someserver.com"
-}'
+  --data '{ "hours": 0, "minutes": 0, "seconds": 200, "url": "https://someserver.com" }'
+```
+
+response: 
+```json 
+{ "id": "61925ffcf5fb7e8636a68654" }
+```
+
+2. Getting seconds left until execution:
+```bash
+curl http://localhost:55551/timers/61925ffcf5fb7e8636a68654
+```
+
+response:
+```json
+{ "id": "6192613ca05b38d907601861", "time_left": 195.299 }
 ```
 
 Basic usage (as shown in `src/scheduler.ts`:
