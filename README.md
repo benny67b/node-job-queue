@@ -1,6 +1,8 @@
 # node-job-scheduler
-
 Hi!
+
+### UML diagram
+![image](https://user-images.githubusercontent.com/31515087/141787357-3fbd1b34-2afd-438d-a4c7-69b54eaccabf.png)
 
 ## Starting the project:
 1. `docker-compose up -d` to start `localstack`
@@ -70,6 +72,3 @@ To switch between SQS based scheduler and in memory scheduler just change `src/c
     "type": "sqs"
 }
 ```
-
-## UML diagram
-![image](https://user-images.githubusercontent.com/31515087/141787357-3fbd1b34-2afd-438d-a4c7-69b54eaccabf.png)
